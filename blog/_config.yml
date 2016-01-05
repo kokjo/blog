@@ -6,7 +6,7 @@ highlighter:      pygments
 permalink:        pretty
 relative_permalinks: true
 
-exclude: ["deploy.sh"]
+exclude: ["deploy.sh", "LICENSE.md"]
 # Setup
 title:            Kokjo's Blog
 description:      'A blog about hacking and CTFs'
