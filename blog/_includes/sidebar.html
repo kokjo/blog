@@ -27,7 +27,18 @@
       {% endfor %}
 
       <a class="sidebar-nav-item" href="{{ site.author.github}}">GitHub</a>
+      <a class="sidebar-nav-item" href="https://github.com/Gallopsled/pwntools">Pwntools</a>
 
+      <div class="sidebar-nav-item">Categories:</div>
+      <ul>
+        {% for cat in site.categories %}
+          <li>
+            <a class="sidebar-nav-item" href="{{ site.baseurl }}categories#{{ cat[0] }}">
+              {{ cat[0] }}({{ cat[1].size }})
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
     </nav>
   </div>
   <div class="copyright">
