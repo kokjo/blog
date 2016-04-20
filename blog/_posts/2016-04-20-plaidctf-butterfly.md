@@ -16,10 +16,10 @@ It works by `mprotect`'ing the page with read-write-execute before flipping the 
 
 # The exploit
 
-As we can flip arbitary bits in both the code and data, it knew that we shuld either flip it the code of `main` or a got entry, to controle RIP.
+As we can flip arbitary bits in both the code and data, it knew that we should either flip the bit the code of `main` or in some got entry,
+to get control of `rip`.
 
 At the end of `main` we found:
-
 ```text
   400860:   48 83 c4 48             add    rsp,0x48
   400864:   5b                      pop    rbx
